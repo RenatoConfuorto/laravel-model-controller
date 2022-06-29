@@ -5,9 +5,12 @@
 @endsection
 
 @section('main-content')
-    @foreach ($movies as $movie)
-        @include('components.card', [
-            'movie' => $movie,
-        ])
-    @endforeach
+    <div class="card-container">
+        @foreach ($movies as $movie)
+            @include('components.card', [
+                'movie' => $movie,
+            ])
+        @endforeach
+
+    </div>
 @endsection

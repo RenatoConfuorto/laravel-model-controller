@@ -1,0 +1,46 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 2000px) {
+  html{
+    font-size: 110%;
+  }
+}
+// html{
+//   font-size: 150%;
+// }
+body{
+  padding: 2rem;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+
+  .card{
+    text-align: center;
+    border: 1px solid black;
+    flex-basis: calc((100% / 2) - 1rem);
+    padding: 1rem 0;
+    margin: 0.5rem;
+    line-height: 1.8;
+
+    .head{
+
+      background-color: #dddddd;
+    }
+
+    .info{
+
+      & > h3{
+        border-bottom: 1px solid #cfcfcf;
+      }
+    }
+  }
+}
